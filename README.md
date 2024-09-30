@@ -4,7 +4,6 @@ This is a simple Python-based desktop application to log your running data (date
 Features
 Input Fields: Enter the date, distance (in miles), time (in minutes), and pace (minutes per mile) of your run.
 Data Storage: The run data is saved in a CSV file (run_log.csv) for easy access and tracking.
-
 Success/Error Feedback: Provides confirmation messages for successful logging or error messages if something goes wrong.
 Clears Input Fields: Automatically clears input fields after logging the data.
 Future Features
