@@ -32,14 +32,14 @@ def plot_progress():
         
         
         df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d')
-        df['Distance'] = pd.to_numeric(df['Distance'], errors='coerce')
+        df['Pace'] = pd.to_numeric(df['Pace'], errors='coerce')
         df = df.dropna()
         
         plt.figure()
-        plt.plot(df['Date'], df['Distance'], marker='o', linestyle='-', color='b')
+        plt.plot(df['Date'], df['Pace'], marker='o', linestyle='-', color='b')
         plt.xlabel('Date')
-        plt.ylabel('Distance (Miles)')
-        plt.title('Distance Over Time')
+        plt.ylabel('Pace (Minutes)')
+        plt.title('Pace Over Time')
         plt.xticks(rotation=45)
         plt.tight_layout()
 
